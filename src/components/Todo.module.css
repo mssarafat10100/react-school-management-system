@@ -1,0 +1,114 @@
+:root {
+  --mainBackgroundColor: #303f9f;
+  --boxbackgroundColor: #3f51b5;
+  --btnbackgroundColor: #7986cb;
+}
+
+body {
+  background-color: var(--mainBackgroundColor);
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* ----|> form style start <|----  */
+
+.form_todo {
+  padding-top: 20px;
+  text-align: center;
+}
+
+.form_input {
+  width: 300px;
+  height: 30px;
+  background: var(--boxbackgroundColor);
+  backdrop-filter: blur(0.5px);
+  -webkit-backdrop-filter: blur(0.5px);
+  box-shadow: 0 8px 32px 0 rgba(0, 117, 172, 0.37);
+  border-radius: 5px;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+}
+
+.form_input::placeholder {
+  color: #ddd;
+  padding-left: 5px;
+  opacity: 0.9;
+}
+
+.form_input:hover {
+  box-shadow: 0 0px 0px 0 rgba(0, 117, 172, 0.37);
+  transition: 0.4s;
+
+}
+
+.form_btn {
+  width: 110px;
+  height: 35px;
+  margin-left: 20px;
+  background: var(--boxbackgroundColor);
+  backdrop-filter: blur(0.5px);
+  -webkit-backdrop-filter: blur(0.5px);
+  border-radius: 5px;
+  box-shadow: 0 8px 50px 0 rgba(0, 117, 172, 0.37);
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  color: #ddd;
+  opacity: 0.9;
+}
+
+.form_btn:hover {
+  background-color: var(--btnbackgroundColor);
+  box-shadow: 0 0px 0px 0 rgba(0, 117, 172, 0.37);
+  transition: 0.4s;
+  color: #000;
+}
+
+/* ----|> form style end <|----  */
+#all_student {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  padding-top: 50px;
+}
+
+#single_student {
+  width: 30%;
+  /* height: 100px; */
+  background: var(--boxbackgroundColor);
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  backdrop-filter: blur(0px);
+  -webkit-backdrop-filter: blur(0px);
+  border-radius: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+}
+
+#single_student ul {
+  list-style-type: none;
+}
+
+#single_student .boxbtn {
+  height: 27px;
+  margin-left: 5px;
+  background: var(--btnbackgroundColor);
+  backdrop-filter: blur(0.5px);
+  -webkit-backdrop-filter: blur(0.5px);
+  border-radius: 5px;
+  box-shadow: 0 8px 50px 0 rgba(0, 117, 172, 0.37);
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  color: #ddd;
+  margin-bottom: 10px;
+}
+#single_student .boxbtn:hover {
+  background-color: var(--mainBackgroundColor);
+  box-shadow: 0 0px 0px 0 rgba(0, 117, 172, 0.37);
+  transition: 0.4s;
+  color: #000;
+}
+
+h4 {
+  font-family: roboto;
+  font-size: 15px;
+  padding: 0px;
+  margin: 0px;
+  display: inline-block;
+
+}
